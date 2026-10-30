@@ -1,0 +1,48 @@
+/* Calendar (react-big-calendar) */
+.rbc-calendar {
+  @apply text-sm !important;
+}
+.rbc-calendar .rbc-toolbar {
+  @apply mb-4 gap-2 !important;
+}
+.rbc-calendar .rbc-toolbar .rbc-toolbar-label {
+  @apply font-semibold text-slate-800 !important;
+}
+.rbc-calendar .rbc-toolbar button {
+  @apply border-slate-200 text-slate-600 text-sm px-3 py-1.5 !important;
+}
+.rbc-calendar .rbc-toolbar button:hover,
+.rbc-calendar .rbc-toolbar button:focus {
+  @apply bg-slate-100 text-slate-900 !important;
+}
+.rbc-calendar .rbc-toolbar button.rbc-active,
+.rbc-calendar .rbc-toolbar button.rbc-active:hover {
+  @apply bg-brand-600 border-brand-600 text-white !important;
+  box-shadow: none !important;
+}
+.rbc-calendar .rbc-month-view,
+.rbc-calendar .rbc-time-view,
+.rbc-calendar .rbc-agenda-view table.rbc-agenda-table {
+  @apply rounded-xl border-slate-200 overflow-hidden !important;
+}
+.rbc-calendar .rbc-header {
+  @apply py-2 text-xs font-semibold uppercase tracking-wide text-slate-500 border-slate-200 !important;
+}
+.rbc-calendar .rbc-month-row + .rbc-month-row,
+.rbc-calendar .rbc-day-bg + .rbc-day-bg,
+.rbc-calendar .rbc-header + .rbc-header {
+  @apply border-slate-100 !important;
+}
+.rbc-calendar .rbc-off-range-bg {
+  @apply bg-slate-50 !important;
+}
+.rbc-calendar .rbc-today {
+  @apply bg-brand-50 !important;
+}
+.rbc-calendar .rbc-date-cell {
+  @apply p-1.5 text-xs text-slate-600 !important;
+}
+.rbc-calendar .rbc-event {
+  @apply bg-brand-600 rounded-md text-xs px-2 !important;
+}
+

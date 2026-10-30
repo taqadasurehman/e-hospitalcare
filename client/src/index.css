@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+  }
+}
+
+/* Confirm dialog (react-confirm-alert) */
+.react-confirm-alert-overlay {
+  background: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(2px);
+}
+.react-confirm-alert-body {
+  @apply rounded-2xl shadow-xl font-sans text-slate-600 p-6 w-96 max-w-full;
+}
+.react-confirm-alert-body > h1 {
+  @apply text-lg font-semibold text-slate-900 mb-1;
+}
+.react-confirm-alert-button-group > button {
+  @apply bg-brand-600 hover:bg-brand-700 rounded-lg px-4 py-2 text-sm font-medium;
+}
+.react-confirm-alert-button-group > button:last-child {
+  @apply bg-white text-slate-700 border border-slate-200 hover:bg-slate-50;
+}
+
+/* Toasts */
+.Toastify__toast {
+  @apply rounded-xl font-sans text-sm;
+}
